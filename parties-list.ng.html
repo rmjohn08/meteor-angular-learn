@@ -1,5 +1,5 @@
-// this is not use anymore. delete it....
-<div ng-controller="PartiesListCtrl as partyCtrl">
+
+<div>
 	<form>
 		<label>Name:</label>
 		<input type="text" ng-model="newparty.name" />
@@ -10,7 +10,7 @@
 
 	<ul>
 		<li ng-repeat="party in partyCtrl.parties">
-			{{party.name}}
+			<a href="/parties/{{party._id}}">{{party.name}}</a>
 			<p>{{party.description}}</p><a ng-click="partyCtrl.removeParty(party)" href="#">X</a>
 		</li>
 	</ul>
