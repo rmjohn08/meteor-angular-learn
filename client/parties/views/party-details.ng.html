@@ -1,0 +1,13 @@
+<p>Here you will see the details for a party : {{partyDetail.partyId}}</p>
+
+<form>
+	<label>Name:<input type="text" ng-model="partyDetail.party.name"></label>
+	<label>Description:<input type="text" ng-model="partyDetail.party.description"></label>
+	<ul>
+	<div class="container">
+		<button ng-click="partyDetail.save()">Save</button>
+		<button ng-click="partyDetail.reset()">Reset</button>
+		<button ui-sref="parties">Cancel</button>
+	</div>
+	</ul>
+</form>
